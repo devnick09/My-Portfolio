@@ -124,7 +124,7 @@ const Wrap = styled.div`
 function Hero() {
   return (
     <Container1>
-      <div class="container">
+      <div className="container">
         <Wrap>
           <H2>Hi,</H2>
           <H1>I`&apos`m Nikhil</H1>

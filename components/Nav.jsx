@@ -61,7 +61,7 @@ const Ul = styled.ul`
 function Nav() {
   return (
     <NavBar>
-      <div class="container">
+      <div className="container">
         <MainNav>
           <Link href="/" passHref>
             <h1>NS</h1>

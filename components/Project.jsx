@@ -71,36 +71,36 @@ const P = styled.p`
 
 function Project() {
   return (
-    <div class="container">
+    <div className="container">
       <Main>
         <Head>Projects</Head>
         <Grid>
-          <div class="">
-            <h1 class="num1">01</h1>
+          <div className="">
+            <h1 className="num1">01</h1>
             <h2>E-commerce Website</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
               omnis deserunt. Facilis, quis, sed aliquid fuga consequatur
             </p>
           </div>
-          <div class="">
-            <h1 class="num1">02</h1>
+          <div className="">
+            <h1 className="num1">02</h1>
             <h2>E-commerce Website</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
               omnis deserunt. Facilis, quis, sed aliquid fuga consequatur
             </p>
           </div>
-          <div class="">
-            <h1 class="num1">03</h1>
+          <div className="">
+            <h1 className="num1">03</h1>
             <h2>E-commerce Website</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
               omnis deserunt. Facilis, quis, sed aliquid fuga consequatur
             </p>
           </div>
-          <div class="">
-            <h1 class="num1">04</h1>
+          <div className="">
+            <h1 className="num1">04</h1>
             <h2>E-commerce Website</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
