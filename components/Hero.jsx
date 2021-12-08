@@ -127,17 +127,17 @@ function Hero() {
       <div class="container">
         <Wrap>
           <H2>Hi,</H2>
-          <H1>I'm Nikhil</H1>
+          <H1>I`&apos`m Nikhil</H1>
           <H2>I Build Things For The Web.</H2>
         </Wrap>
 
         <P>
-          I'm a web designer/developer from india, i’m specialized in
+          I`&apos`m a web designer/developer from india, i’m specialized in
           <br /> designing and building websites, applications, and
           <br /> everything in between.
         </P>
         <Link href="#">
-          <Btn1>Let's Talk</Btn1>
+          <Btn1>Let`&apos`s Talk</Btn1>
         </Link>
         <Link href="#">
           <Btn2>View Projects</Btn2>
