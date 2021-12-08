@@ -110,7 +110,7 @@ function Project() {
         </Grid>
         <Link href="#" passHref>
           <P>
-            <IoArrowForwardCircleOutline /> See All Project`&apos`s
+            <IoArrowForwardCircleOutline /> See All Project&apos;s
           </P>
         </Link>
       </Main>
