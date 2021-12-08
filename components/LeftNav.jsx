@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Left_Nav = styled.div`
   height: 100vh;
@@ -30,6 +30,9 @@ const Left_Line = styled.div`
 function LeftNav() {
   return (
     <Left_Nav>
+      <Link href="#" passHref>
+        <FaInstagram />
+      </Link>
       <Link href="#" passHref>
         <FaLinkedinIn />
       </Link>
