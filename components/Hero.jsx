@@ -136,10 +136,10 @@ function Hero() {
           <br /> designing and building websites, applications, and
           <br /> everything in between.
         </P>
-        <Link href="#">
+        <Link href="#" passHref>
           <Btn1>Let`&apos`s Talk</Btn1>
         </Link>
-        <Link href="#">
+        <Link href="#" passHref>
           <Btn2>View Projects</Btn2>
         </Link>
       </div>

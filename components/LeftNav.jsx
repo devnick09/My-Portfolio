@@ -30,13 +30,13 @@ const Left_Line = styled.div`
 function LeftNav() {
   return (
     <Left_Nav>
-      <Link href="#">
+      <Link href="#" passHref>
         <FaLinkedinIn />
       </Link>
-      <Link href="#">
+      <Link href="#" passHref>
         <FaGithub />
       </Link>
-      <Link href="#">
+      <Link href="#" passHref>
         <FaTwitter />
       </Link>
       <Left_Line></Left_Line>

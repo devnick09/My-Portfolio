@@ -30,8 +30,8 @@ function RightNav() {
   return (
     <Right_Nav>
       <RightLine></RightLine>
-      <Link href="#">
-        <p>vishwa.nikhil009@gmail.com</p>
+      <Link href="#" passHref>
+        <a>vishwa.nikhil009@gmail.com</a>
       </Link>
     </Right_Nav>
   );

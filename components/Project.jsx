@@ -108,7 +108,7 @@ function Project() {
             </p>
           </div>
         </Grid>
-        <Link href="#">
+        <Link href="#" passHref>
           <P>
             <IoArrowForwardCircleOutline /> See All Project`&apos`s
           </P>

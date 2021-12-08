@@ -63,21 +63,29 @@ function Nav() {
     <NavBar>
       <div class="container">
         <MainNav>
-          <Link href="/">
+          <Link href="/" passHref>
             <h1>NS</h1>
           </Link>
           <Ul>
             <li>
-              <Link href="#">Home</Link>
+              <Link href="#" passHref>
+                Home
+              </Link>
             </li>
             <li>
-              <Link href="#">About</Link>
+              <Link href="#" passHref>
+                About
+              </Link>
             </li>
             <li>
-              <Link href="#">Projects</Link>
+              <Link href="#" passHref>
+                Projects
+              </Link>
             </li>
             <li>
-              <Link href="#">Contact</Link>
+              <Link href="#" passHref>
+                Contact
+              </Link>
             </li>
             <li>
               <button>Resume</button>
