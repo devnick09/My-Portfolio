@@ -68,22 +68,22 @@ function Nav() {
           </Link>
           <Ul>
             <li>
-              <Link href="#" passHref>
+              <Link href="/" passHref>
                 Home
               </Link>
             </li>
             <li>
-              <Link href="#" passHref>
+              <Link href="/about" passHref>
                 About
               </Link>
             </li>
             <li>
-              <Link href="#" passHref>
+              <Link href="/project" passHref>
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="#" passHref>
+              <Link href="/contact" passHref>
                 Contact
               </Link>
             </li>

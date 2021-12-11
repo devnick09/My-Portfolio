@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import TotalProjects from "./TotalProjects";
 
 const Main = styled.div`
   width: 100%;
@@ -14,7 +15,7 @@ const Head = styled.h1`
   color: #cfc0dd;
   opacity: 0.2;
   position: absolute;
-  right: -130px;
+  right: -170px;
   top: -130px;
   /* z-index: 12; */
 `;
@@ -69,46 +70,17 @@ const P = styled.p`
   }
 `;
 
-function Project() {
+function Project(props) {
   return (
     <div className="container">
       <Main>
         <Head>Projects</Head>
         <Grid>
-          <div className="">
-            <h1 className="num1">01</h1>
-            <h2>E-commerce Website</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-              omnis deserunt. Facilis, quis, sed aliquid fuga consequatur
-            </p>
-          </div>
-          <div className="">
-            <h1 className="num1">02</h1>
-            <h2>E-commerce Website</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-              omnis deserunt. Facilis, quis, sed aliquid fuga consequatur
-            </p>
-          </div>
-          <div className="">
-            <h1 className="num1">03</h1>
-            <h2>E-commerce Website</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-              omnis deserunt. Facilis, quis, sed aliquid fuga consequatur
-            </p>
-          </div>
-          <div className="">
-            <h1 className="num1">04</h1>
-            <h2>E-commerce Website</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-              omnis deserunt. Facilis, quis, sed aliquid fuga consequatur
-            </p>
-          </div>
+          {props.allprojects.AllProjects.map((project, index) => (
+            <TotalProjects project={project} index={index} key={project.id} />
+          ))}
         </Grid>
-        <Link href="#" passHref>
+        <Link href="/project" passHref>
           <P>
             <IoArrowForwardCircleOutline /> See All Project&apos;s
           </P>

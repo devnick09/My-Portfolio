@@ -31,7 +31,7 @@ const Main = styled.div`
     opacity: 0.3;
     font-size: 25px;
     left: -50px;
-    top: 210px;
+    top: 205px;
   }
 `;
 
