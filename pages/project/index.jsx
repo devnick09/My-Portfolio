@@ -7,6 +7,11 @@ const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
   padding-top: 250px;
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
   div {
     margin-top: 1000px;
     color: #cfc0dd;
@@ -17,6 +22,10 @@ const Grid = styled.div`
     margin: 5px;
     border-radius: 10px;
     position: relative;
+    @media screen and (max-width: 480px) {
+      border-radius: 30px;
+      padding-top: 50px;
+    }
   }
 `;
 

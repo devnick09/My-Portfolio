@@ -19,6 +19,9 @@ const Left_Nav = styled.div`
     margin-bottom: 20px;
     cursor: pointer;
   }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Left_Line = styled.div`

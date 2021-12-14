@@ -13,16 +13,6 @@ export const AllProjects = [
   },
   {
     id: uuidv4(),
-    name: "Room home page",
-    description:
-      "Room home page built with html5, scss and tiny bit of javascript.",
-    tags: ["html5", "scss", "javascript"],
-    live: "https://vr-room-homepage.netlify.app/",
-    github: "https://github.com/devVivekrao/room-homepage",
-    featured: true,
-  },
-  {
-    id: uuidv4(),
     name: "Simple social media app with authentication",
     description:
       "Simple social media app built with react, node, express and mongodb.",

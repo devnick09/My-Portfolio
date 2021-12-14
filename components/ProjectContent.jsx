@@ -4,12 +4,20 @@ import styled from "styled-components";
 
 const Main = styled.div`
   margin-top: 200px;
+  @media screen and (max-width: 480px) {
+    width: 360px;
+  }
 `;
 const H2 = styled.h1`
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
   color: #cfc0dd;
+  @media screen and (max-width: 480px) {
+    margin: 0px 15px;
+    width: 340px;
+    font-size: 40px;
+  }
 `;
 
 function ProjectContent() {

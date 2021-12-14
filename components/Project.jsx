@@ -6,6 +6,8 @@ import TotalProjects from "./TotalProjects";
 const Main = styled.div`
   width: 100%;
   position: relative;
+  @media screen and (max-width: 480px) {
+  }
 `;
 
 const Head = styled.h1`
@@ -18,6 +20,10 @@ const Head = styled.h1`
   right: -170px;
   top: -130px;
   /* z-index: 12; */
+  @media screen and (max-width: 480px) {
+    font-size: 80px;
+    left: 40px;
+  }
 `;
 
 const Grid = styled.div`
@@ -25,9 +31,17 @@ const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 6rem;
   padding-top: 250px;
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin: 0px 5px;
+    padding-top: 25px;
+    top: 0;
+    left: 0;
+  }
 
   div {
-    margin-top: 1000px;
     color: #cfc0dd;
     background-color: #604da6;
     height: 400px;
@@ -36,6 +50,10 @@ const Grid = styled.div`
     margin: 5px;
     border-radius: 10px;
     position: relative;
+    @media screen and (max-width: 480px) {
+      width: 340px;
+      border-radius: 50px;
+    }
 
     .num1 {
       position: absolute;
@@ -63,6 +81,9 @@ const P = styled.p`
   justify-content: flex-end;
   margin-top: 10px;
   margin-right: 5px;
+  @media screen and (max-width: 480px) {
+    width: 340px;
+  }
 
   svg {
     font-size: 1.4rem;

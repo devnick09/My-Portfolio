@@ -8,12 +8,24 @@ const Main = styled.div`
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 6rem;
+  @media screen and (max-width: 480px) {
+    width: 360px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
   article {
     grid-area: "article";
     color: #cfc0dd;
     position: relative;
-    grid-column-start: 1;
-    grid-row-start: 1;
+    @media screen and (max-width: 480px) {
+      margin: 5px 20px;
+
+      width: 320px;
+      grid-column-start: 1;
+      grid-row-start: 1;
+      font-size: 15px;
+    }
     :before {
       color: #cfc0dd;
       text-transform: initial;
@@ -25,6 +37,11 @@ const Main = styled.div`
       font-size: 25px;
       top: -35px;
       left: -50px;
+      @media screen and (max-width: 480px) {
+        font-size: 15px;
+        top: -20px;
+        left: -15px;
+      }
     }
     :after {
       color: #cfc0dd;
@@ -37,6 +54,11 @@ const Main = styled.div`
       font-size: 25px;
       left: -50px;
       margin-top: 20px;
+      @media screen and (max-width: 480px) {
+        font-size: 15px;
+        top: 372px;
+        left: -15px;
+      }
     }
   }
 `;
@@ -47,6 +69,11 @@ const H1 = styled.h1`
   font-size: 200px;
   color: #cfc0dd;
   text-shadow: -10px 8px 10px rgba(0, 0, 0, 0.5);
+  @media screen and (max-width: 480px) {
+    font-size: 100px;
+    margin-top: 40px;
+    margin-left: -10px;
+  }
 `;
 
 const Section = styled.section`
@@ -56,6 +83,7 @@ const Section = styled.section`
   flex-direction: column;
   grid-column-start: 2;
   grid-row-start: 1;
+
   right: 0;
   padding: 20px;
   background: rgba(255, 255, 255, 0.05);
@@ -64,6 +92,15 @@ const Section = styled.section`
   -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
+  @media screen and (max-width: 480px) {
+    width: 340px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border-radius: 30px;
+  }
   div {
     margin: 15px 0px;
     h3 {
@@ -90,6 +127,15 @@ const SideSection = styled.section`
   -webkit-backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
+  @media screen and (max-width: 480px) {
+    width: 340px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    border-radius: 30px;
+  }
   ul {
     list-style: none;
     display: flex;

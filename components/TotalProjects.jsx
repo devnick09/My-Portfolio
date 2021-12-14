@@ -4,11 +4,21 @@ import styled from "styled-components";
 const Main = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 480px) {
+    width: 350px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
 `;
 
 const H3 = styled.h3`
   font-family: "Source Serif Pro", Helvetica Neue, sans-serif;
   font-size: 1.4rem;
+  @media screen and (max-width: 480px) {
+    margin-left: 0px;
+  }
 `;
 const P = styled.p`
   letter-spacing: 0.5px;
@@ -17,7 +27,11 @@ const P = styled.p`
   border-bottom: 3px solid #cbd5e0;
 `;
 const Tags = styled.div`
-  all: unset;
+  @media screen and (max-width: 480px) {
+    position: absolute;
+    padding: 0px;
+    width: 350px;
+  }
 `;
 
 function TotalProjects(props) {

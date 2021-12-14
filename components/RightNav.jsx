@@ -19,6 +19,10 @@ const Right_Nav = styled.div`
     color: #cfc0dd;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const RightLine = styled.div`
   background-color: #cfc0dd;

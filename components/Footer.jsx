@@ -9,6 +9,12 @@ const Main = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+  @media screen and (max-width: 480px) {
+    position: relative;
+    margin: 8px 8px;
+
+    width: 340px;
+  }
   :before {
     color: #cfc0dd;
     text-transform: initial;
@@ -20,6 +26,12 @@ const Main = styled.div`
     font-size: 25px;
     top: 10px;
     left: -50px;
+    @media screen and (max-width: 480px) {
+      position: absolute;
+      font-size: 20px;
+      top: 15px;
+      left: 0px;
+    }
   }
   :after {
     color: #cfc0dd;
@@ -32,6 +44,12 @@ const Main = styled.div`
     font-size: 25px;
     left: -50px;
     top: 205px;
+    @media screen and (max-width: 480px) {
+      position: absolute;
+      font-size: 20px;
+      top: 205px;
+      left: 0px;
+    }
   }
 `;
 
@@ -40,9 +58,18 @@ const Info = styled.div`
   color: #cfc0dd;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+    margin: 0px 10px;
+    margin-right: 0px;
+  }
   .p1 {
     margin-bottom: 20px;
     font-weight: bold;
+  }
+  .p2 {
+    @media screen and (max-width: 480px) {
+    }
   }
 `;
 const Nav = styled.ul`
@@ -50,6 +77,11 @@ const Nav = styled.ul`
   flex-direction: column;
   justify-content: center;
   margin-right: 100px;
+  @media screen and (max-width: 480px) {
+    margin-right: -20px;
+    width: 350px;
+    font-size: 12px;
+  }
   li {
     color: #cfc0dd;
     list-style: none;
@@ -60,6 +92,10 @@ const Social = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  @media screen and (max-width: 480px) {
+    width: 350px;
+    font-size: 12px;
+  }
   svg {
     color: #cfc0dd;
     list-style: none;
@@ -71,12 +107,18 @@ const Line1 = styled.div`
   height: 160px;
   width: 1px;
   background-color: #cfc0dd;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 const Line2 = styled.div`
   margin-left: 20px;
   height: 160px;
   width: 1px;
   background-color: #cfc0dd;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 function Footer() {
@@ -86,10 +128,9 @@ function Footer() {
         <Info>
           <h2>Nikhil Sharma</h2>
           <p className="p1">vishwa.nikhil009@gmail.com</p>
-          <p>
-            Designed & Build by nikhil sharma with
-            <br /> next js (react js). Fonts (poppins,
-            <br /> comfortaa, La Belle Aurore)
+          <p className="p2">
+            Designed & Build by Nikhil Sharma with next js (react js). Fonts
+            (poppins, comfortaa, La Belle Aurore)
           </p>
         </Info>
         <Line1></Line1>

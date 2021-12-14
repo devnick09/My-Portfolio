@@ -9,6 +9,10 @@ const Container1 = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  @media screen and (max-width: 480px) {
+    width: 355px;
+    margin: 0px 2px;
+  }
 
   :before {
     color: #cfc0dd;
@@ -19,8 +23,8 @@ const Container1 = styled.div`
     position: relative;
     opacity: 0.3;
     font-size: 25px;
-    top: -270px;
-    left: -50px;
+    top: -260px;
+    left: -30px;
   }
 `;
 
@@ -29,6 +33,14 @@ const H2 = styled.h2`
   font-size: 64px;
   color: #cfc0dd;
   position: relative;
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
+  :last-child {
+    @media screen and (max-width: 480px) {
+      font-size: 22px;
+    }
+  }
 `;
 const H1 = styled.h2`
   font-weight: bold;
@@ -36,6 +48,9 @@ const H1 = styled.h2`
   color: #604da6;
   position: relative;
   margin: -20px 0px -20px 0px;
+  @media screen and (max-width: 480px) {
+    font-size: 50px;
+  }
 `;
 
 const P = styled.p`
@@ -45,6 +60,11 @@ const P = styled.p`
   margin-top: 30px;
   position: relative;
   margin-bottom: 30px;
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+    width: 320px;
+    overflow-wrap: normal;
+  }
   :before {
     color: #cfc0dd;
     text-transform: initial;
@@ -56,6 +76,11 @@ const P = styled.p`
     font-size: 25px;
     top: -23px;
     left: -40px;
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+      top: -20px;
+      left: -10px;
+    }
   }
   :after {
     color: #cfc0dd;
@@ -66,8 +91,13 @@ const P = styled.p`
     position: absolute;
     opacity: 0.3;
     font-size: 25px;
-    top: 90px;
+    top: 55px;
     left: -45px;
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+      top: 90px;
+      left: -10px;
+    }
   }
 `;
 
@@ -95,6 +125,9 @@ const Btn2 = styled.button`
 
 const Wrap = styled.div`
   position: relative;
+  @media screen and (max-width: 480px) {
+    width: 360px;
+  }
   :before {
     color: #cfc0dd;
     text-transform: initial;
@@ -106,6 +139,11 @@ const Wrap = styled.div`
     font-size: 25px;
     top: -10px;
     left: -50px;
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+      top: -18px;
+      left: -12px;
+    }
   }
   :after {
     color: #cfc0dd;
@@ -118,6 +156,11 @@ const Wrap = styled.div`
     font-size: 25px;
     left: -50px;
     top: 265px;
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+      top: 109px;
+      left: 275px;
+    }
   }
 `;
 
@@ -133,8 +176,8 @@ function Hero() {
 
         <P>
           I&apos;m a web designer/developer from india, i’m specialized in
-          <br /> designing and building websites, applications, and
-          <br /> everything in between.
+          designing and building websites, applications, and everything in
+          between.
         </P>
         <Link href="#" passHref>
           <Btn1>Let&apos;s Talk</Btn1>
