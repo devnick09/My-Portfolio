@@ -175,7 +175,7 @@ function Hero() {
         </Wrap>
 
         <P>
-          I&apos;m a web designer/developer from india, i’m specialized in
+          I&apos;m a web designer/developer from india, I&apos;m specialized in
           designing and building websites, applications, and everything in
           between.
         </P>
