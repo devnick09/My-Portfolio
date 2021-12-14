@@ -10,21 +10,8 @@ const Container1 = styled.div`
   justify-content: center;
   margin-top: 100px;
   @media screen and (max-width: 480px) {
-    width: 355px;
-    margin: 0px 2px;
-  }
-
-  :before {
-    color: #cfc0dd;
-    text-transform: initial;
-    content: "<html>";
-    font-family: "La Belle Aurore", cursive;
-    font-weight: lighter;
-    position: relative;
-    opacity: 0.3;
-    font-size: 25px;
-    top: -260px;
-    left: -30px;
+    width: 340px;
+    margin: 0px 30px;
   }
 `;
 
@@ -48,6 +35,18 @@ const H1 = styled.h2`
   color: #604da6;
   position: relative;
   margin: -20px 0px -20px 0px;
+  :before {
+    color: #cfc0dd;
+    text-transform: initial;
+    content: "<html>";
+    font-family: "La Belle Aurore", cursive;
+    font-weight: lighter;
+    position: absolute;
+    opacity: 0.3;
+    font-size: 25px;
+    top: -120px;
+    left: -100px;
+  }
   @media screen and (max-width: 480px) {
     font-size: 50px;
   }
@@ -126,7 +125,7 @@ const Btn2 = styled.button`
 const Wrap = styled.div`
   position: relative;
   @media screen and (max-width: 480px) {
-    width: 360px;
+    width: 340px;
   }
   :before {
     color: #cfc0dd;
@@ -175,7 +174,7 @@ function Hero() {
         </Wrap>
 
         <P>
-          I&apos;m a web designer/developer from india, I&apos;m specialized in
+          I&apos;m a web designer/developer from india, i&apos;m specialized in
           designing and building websites, applications, and everything in
           between.
         </P>
