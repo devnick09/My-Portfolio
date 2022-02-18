@@ -25,11 +25,10 @@ function ProjectContent() {
   const name = router.query.projectName;
   const project = AllProjects.filter((p) => p.name == name);
 
+  console.log(AllProjects);
   return (
     <div className="container">
-      <Main>
-        <H2>{project[0].name}</H2>
-      </Main>
+      <Main>{/* <H2>{project[0].name}</H2> */}</Main>
     </div>
   );
 }

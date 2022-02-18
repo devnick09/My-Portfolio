@@ -147,16 +147,24 @@ function Footer() {
         <Line1></Line1>
         <Nav>
           <li>
-            <a href="/">Home</a>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
           </li>
           <li>
-            <a href="/projects">Project</a>
+            <Link href="/projects">
+              <a>Project</a>
+            </Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link href="/contact">
+              <a>Contact</a>
+            </Link>
           </li>
         </Nav>
         <Line2> </Line2>

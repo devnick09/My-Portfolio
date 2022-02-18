@@ -70,11 +70,13 @@ function Project(props) {
             <TotalProjects project={project} index={index} key={project.id} />
           ))}
         </Grid>
-        <a href="/project">
-          <P>
-            <IoArrowForwardCircleOutline /> See All Project&apos;s
-          </P>
-        </a>
+        <Link href="/project">
+          <a>
+            <P>
+              <IoArrowForwardCircleOutline /> See All Project&apos;s
+            </P>
+          </a>
+        </Link>
       </Main>
     </div>
   );

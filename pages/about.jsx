@@ -204,17 +204,17 @@ function about() {
             <h3>Social Media</h3>
             <ul>
               <li>
-                <a href="instagram">
+                <a href="#">
                   <FaInstagram />
                 </a>
               </li>
               <li>
-                <a href="linkedin">
+                <a href="#">
                   <FaLinkedinIn />
                 </a>
               </li>
               <li>
-                <a href="twitter">
+                <a href="#">
                   <FaTwitter />
                 </a>
               </li>

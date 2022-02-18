@@ -56,18 +56,20 @@ const Tags = styled.div`
 
 function TotalProjects(props) {
   return (
-    <Main>
-      <H3>{props.project.name}</H3>
-      <P>{props.project.description}</P>
-      <Tags>
-        {props.project.tags.map((tag, index) => (
-          <span className={tag} key={index}>
-            {" "}
-            #{tag}
-          </span>
-        ))}
-      </Tags>
-    </Main>
+    <Link href={"project/" + props.project.name}>
+      <Main>
+        <H3>{props.project.name}</H3>
+        <P>{props.project.description}</P>
+        <Tags>
+          {props.project.tags.map((tag, index) => (
+            <span className={tag} key={index}>
+              {" "}
+              #{tag}
+            </span>
+          ))}
+        </Tags>
+      </Main>
+    </Link>
   );
 }
 

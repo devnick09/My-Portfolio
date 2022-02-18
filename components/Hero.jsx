@@ -187,12 +187,16 @@ function Hero() {
           designing <br /> and building websites, applications, and everything
           in between.
         </P>
-        <a href="#">
-          <Btn1>Let&apos;s Talk</Btn1>
-        </a>
-        <a href="/project">
-          <Btn2>View Projects</Btn2>
-        </a>
+        <Link href="#">
+          <a>
+            <Btn1>Let&apos;s Talk</Btn1>
+          </a>
+        </Link>
+        <Link href="/project">
+          <a>
+            <Btn2>View Projects</Btn2>
+          </a>
+        </Link>
       </div>
       <Img src="/man.png" alt="" />
     </Container1>
