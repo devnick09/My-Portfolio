@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 import { FaInstagram, FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { BiChevronDown } from "react-icons/bi";
 
 const Left_Nav = styled.div`
   height: 100vh;
@@ -33,18 +34,18 @@ const Left_Line = styled.div`
 function LeftNav() {
   return (
     <Left_Nav>
-      <Link href="#" passHref>
+      <a href="https://www.instagram.com/dev.nick09/">
         <FaInstagram />
-      </Link>
-      <Link href="#" passHref>
+      </a>
+      <a href="https://www.linkedin.com/in/nikhil-sharma-853478226/">
         <FaLinkedinIn />
-      </Link>
-      <Link href="#" passHref>
+      </a>
+      <a href="https://github.com/devnick09">
         <FaGithub />
-      </Link>
-      <Link href="#" passHref>
+      </a>
+      <a href="https://instagram.com">
         <FaTwitter />
-      </Link>
+      </a>
       <Left_Line></Left_Line>
     </Left_Nav>
   );

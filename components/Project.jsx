@@ -35,41 +35,10 @@ const Grid = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
-    margin: 0px 5px;
+    margin: auto;
     padding-top: 25px;
     top: 0;
     left: 0;
-  }
-
-  div {
-    color: #cfc0dd;
-    background-color: #604da6;
-    height: 400px;
-    width: 350;
-    padding: 50px;
-    margin: 5px;
-    border-radius: 10px;
-    position: relative;
-    @media screen and (max-width: 480px) {
-      width: 340px;
-      border-radius: 50px;
-    }
-
-    .num1 {
-      position: absolute;
-      color: #cfc0dd;
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      font-size: 120px;
-      top: -85px;
-      left: -70px;
-    }
-    :nth-child(even) {
-      .num1 {
-        top: 290px;
-        left: -90px;
-      }
-    }
   }
 `;
 
@@ -101,11 +70,11 @@ function Project(props) {
             <TotalProjects project={project} index={index} key={project.id} />
           ))}
         </Grid>
-        <Link href="/project" passHref>
+        <a href="/project">
           <P>
             <IoArrowForwardCircleOutline /> See All Project&apos;s
           </P>
-        </Link>
+        </a>
       </Main>
     </div>
   );

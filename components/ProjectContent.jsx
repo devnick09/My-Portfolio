@@ -27,7 +27,9 @@ function ProjectContent() {
 
   return (
     <div className="container">
-      <Main>{<H2>{project[0].name}</H2>}</Main>
+      <Main>
+        <H2>{project[0].name}</H2>
+      </Main>
     </div>
   );
 }

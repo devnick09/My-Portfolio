@@ -22,7 +22,7 @@ const H1 = styled.h1`
   text-shadow: -10px 8px 10px rgba(0, 0, 0, 0.8);
   @media screen and (max-width: 480px) {
     margin-top: 45px;
-    margin-left: ;
+    margin-left: 10px;
     width: 350px;
     font-size: 90px;
   }
@@ -64,6 +64,10 @@ const Form = styled.form`
     border-bottom: 1px solid #cfc0dd;
     margin-bottom: 20px;
     color: #cfc0dd;
+    ::placeholder {
+      color: #bdaacea9;
+      font-family: "Poppins", sans-serif;
+    }
   }
   button {
     font-size: 1rem;
@@ -83,18 +87,14 @@ function contact() {
       <Main>
         <p>
           My inbox is always open. Whether you have a question or just want to
+          <br />
           say hi, I&apos;ll try my best to get back to you!
         </p>
         <FormDiv>
           <Form action="">
-            <label htmlFor="">Name</label>
-            <input type="text" placeholder="" />
-            <label htmlFor="">Contact No.</label>
-            <input type="mobile" name="" id="" placeholder="" />
-
-            <label htmlFor="">E-mail</label>
-            <input type="email" name="" id="" placeholder="" />
-
+            <input type="text" placeholder="Name" />
+            <input type="mobile" name="" id="" placeholder="Contact No." />
+            <input type="email" name="" id="" placeholder="E-Mail" />
             <button>Submit</button>
           </Form>
         </FormDiv>

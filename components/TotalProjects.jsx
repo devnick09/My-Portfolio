@@ -4,13 +4,33 @@ import styled from "styled-components";
 const Main = styled.div`
   display: flex;
   flex-direction: column;
+  color: #cfc0dd;
+  background-color: #604da6;
+  padding: 50px;
+  margin: 5px;
+  border-radius: 10px;
   @media screen and (max-width: 480px) {
     width: 350px;
-    position: relative;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
   }
+
+  /* .num1 {
+      position: absolute;
+      color: #cfc0dd;
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 120px;
+      top: -85px;
+      left: -70px;
+    } */
+  /* :nth-child(even) {
+      .num1 {
+        top: 290px;
+        left: -90px;
+      }
+    } */
 `;
 
 const H3 = styled.h3`
@@ -27,29 +47,27 @@ const P = styled.p`
   border-bottom: 3px solid #cbd5e0;
 `;
 const Tags = styled.div`
+  padding: 3rem 0;
+  width: 100%;
   @media screen and (max-width: 480px) {
-    position: absolute;
-    padding: 0px;
-    width: 350px;
+    padding: 1rem 0;
   }
 `;
 
 function TotalProjects(props) {
   return (
-    <Link href={"project/" + props.project.name} passHref>
-      <Main>
-        <H3>{props.project.name}</H3>
-        <P>{props.project.description}</P>
-        <Tags>
-          {props.project.tags.map((tag, index) => (
-            <span className={tag} key={index}>
-              {" "}
-              #{tag}
-            </span>
-          ))}
-        </Tags>
-      </Main>
-    </Link>
+    <Main>
+      <H3>{props.project.name}</H3>
+      <P>{props.project.description}</P>
+      <Tags>
+        {props.project.tags.map((tag, index) => (
+          <span className={tag} key={index}>
+            {" "}
+            #{tag}
+          </span>
+        ))}
+      </Tags>
+    </Main>
   );
 }
 

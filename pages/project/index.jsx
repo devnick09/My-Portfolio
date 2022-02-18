@@ -12,21 +12,6 @@ const Grid = styled.div`
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  div {
-    margin-top: 1000px;
-    color: #cfc0dd;
-    background-color: #604da6;
-    height: 400px;
-    width: 350;
-    padding: 50px;
-    margin: 5px;
-    border-radius: 10px;
-    position: relative;
-    @media screen and (max-width: 480px) {
-      border-radius: 30px;
-      padding-top: 50px;
-    }
-  }
 `;
 
 function index(props) {

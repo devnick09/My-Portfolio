@@ -163,6 +163,15 @@ const Wrap = styled.div`
   }
 `;
 
+const Img = styled.img`
+  height: 22rem;
+  position: absolute;
+  right: 0;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+`;
+
 function Hero() {
   return (
     <Container1>
@@ -175,16 +184,17 @@ function Hero() {
 
         <P>
           I&apos;m a web designer/developer from india, i&apos;m specialized in
-          designing and building websites, applications, and everything in
-          between.
+          designing <br /> and building websites, applications, and everything
+          in between.
         </P>
-        <Link href="#" passHref>
+        <a href="#">
           <Btn1>Let&apos;s Talk</Btn1>
-        </Link>
-        <Link href="#" passHref>
+        </a>
+        <a href="/project">
           <Btn2>View Projects</Btn2>
-        </Link>
+        </a>
       </div>
+      <Img src="/man.png" alt="" />
     </Container1>
   );
 }

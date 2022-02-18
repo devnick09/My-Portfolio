@@ -11,6 +11,7 @@ const Main = styled.div`
   position: relative;
   @media screen and (max-width: 480px) {
     position: relative;
+
     margin: 8px 8px;
 
     width: 340px;
@@ -78,9 +79,10 @@ const Nav = styled.ul`
   justify-content: center;
   margin-right: 100px;
   @media screen and (max-width: 480px) {
-    margin-right: -20px;
+    /* margin-right: -20px;
     width: 350px;
-    font-size: 12px;
+    font-size: 12px; */
+    display: none;
   }
   li {
     color: #cfc0dd;
@@ -92,15 +94,24 @@ const Social = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  @media screen and (max-width: 480px) {
-    width: 350px;
-    font-size: 12px;
-  }
+
   svg {
     color: #cfc0dd;
     list-style: none;
     margin: 10px 30px;
     cursor: pointer;
+  }
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    column-gap: 20px;
+    font-size: 20px;
+    padding: 0 30px;
+    svg {
+      margin: 0px;
+      margin-bottom: 5px;
+    }
   }
 `;
 const Line1 = styled.div`
@@ -136,40 +147,32 @@ function Footer() {
         <Line1></Line1>
         <Nav>
           <li>
-            <Link href="#" passHref>
-              Home
-            </Link>
+            <a href="/">Home</a>
           </li>
           <li>
-            <Link href="#" passHref>
-              About
-            </Link>
+            <a href="/about">About</a>
           </li>
           <li>
-            <Link href="#" passHref>
-              Project
-            </Link>
+            <a href="/projects">Project</a>
           </li>
           <li>
-            <Link href="#" passHref>
-              Contact
-            </Link>
+            <a href="/contact">Contact</a>
           </li>
         </Nav>
         <Line2> </Line2>
         <Social>
-          <Link href="#" passHref>
+          <a href="https://instagram.com">
             <FaInstagram />
-          </Link>
-          <Link href="#" passHref>
+          </a>
+          <a href="https://instagram.com">
             <FaLinkedinIn />
-          </Link>
-          <Link href="#" passHref>
+          </a>
+          <a href="https://instagram.com">
             <FaGithub />
-          </Link>
-          <Link href="#" passHref>
+          </a>
+          <a href="https://instagram.com">
             <FaTwitter />
-          </Link>
+          </a>
         </Social>
       </Main>
     </div>
