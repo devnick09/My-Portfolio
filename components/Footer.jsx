@@ -169,17 +169,14 @@ function Footer() {
         </Nav>
         <Line2> </Line2>
         <Social>
-          <a href="https://instagram.com">
+          <a href="https://www.instagram.com/dev.nick09/">
             <FaInstagram />
           </a>
-          <a href="https://instagram.com">
+          <a href="https://www.linkedin.com/in/nikhil-sharma-853478226/">
             <FaLinkedinIn />
           </a>
-          <a href="https://instagram.com">
+          <a href="https://github.com/devnick09">
             <FaGithub />
-          </a>
-          <a href="https://instagram.com">
-            <FaTwitter />
           </a>
         </Social>
       </Main>

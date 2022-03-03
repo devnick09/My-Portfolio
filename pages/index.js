@@ -1,12 +1,12 @@
 import Hero from "../components/Hero";
-import Project from "../components/Project";
+import ProjectSection from "../components/ProjectSection";
 import { AllProjects } from "../ProjectData/data";
 
 export default function Home(props) {
   return (
     <>
       <Hero />
-      <Project allprojects={props} />
+      <ProjectSection allprojects={props} />
     </>
   );
 }

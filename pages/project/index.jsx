@@ -1,5 +1,5 @@
 import { AllProjects } from "../../ProjectData/data";
-import TotalProjects from "../../components/TotalProjects";
+import ProjectCard from "../../components/ProjectCard";
 import styled from "styled-components";
 
 const Grid = styled.div`
@@ -19,7 +19,7 @@ function index(props) {
     <div className="container">
       <Grid>
         {props.AllProjects.map((project, index) => (
-          <TotalProjects project={project} index={index} key={project.id} />
+          <ProjectCard project={project} index={index} key={project.id} />
         ))}
       </Grid>
     </div>

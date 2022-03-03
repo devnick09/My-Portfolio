@@ -34,7 +34,7 @@ function RightNav() {
   return (
     <Right_Nav>
       <RightLine></RightLine>
-      <a href="#">
+      <a href="mailto:vishwa.nikhil009@gmail.com?subject=Regarding%Website%Building">
         <p>vishwa.nikhil009@gmail.com</p>
       </a>
     </Right_Nav>

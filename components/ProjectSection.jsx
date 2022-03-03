@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import TotalProjects from "./TotalProjects";
+import ProjectCard from "./ProjectCard";
 
 const Main = styled.div`
   width: 100%;
@@ -60,14 +60,14 @@ const P = styled.p`
   }
 `;
 
-function Project(props) {
+function ProjectSection(props) {
   return (
     <div className="container">
       <Main>
         <Head>Projects</Head>
         <Grid>
           {props.allprojects.AllProjects.map((project, index) => (
-            <TotalProjects project={project} index={index} key={project.id} />
+            <ProjectCard project={project} index={index} key={project.id} />
           ))}
         </Grid>
         <Link href="/project">
@@ -82,4 +82,4 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default ProjectSection;

@@ -43,9 +43,7 @@ function LeftNav() {
       <a href="https://github.com/devnick09">
         <FaGithub />
       </a>
-      <a href="https://instagram.com">
-        <FaTwitter />
-      </a>
+
       <Left_Line></Left_Line>
     </Left_Nav>
   );
