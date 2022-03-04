@@ -15,7 +15,7 @@ const Main = styled.div`
   }
 `;
 const H1 = styled.h1`
-  margin-left: -30px;
+  margin-left: -15rem;
   opacity: 0.3;
   font-size: 200px;
   color: #cfc0dd;
@@ -82,7 +82,7 @@ const Form = styled.form`
 
 function contact() {
   return (
-    <div>
+    <div className="container">
       <H1>Contact</H1>
       <Main>
         <p>

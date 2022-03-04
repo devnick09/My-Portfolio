@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styled from "styled-components";
 import { FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -64,7 +63,8 @@ const Main = styled.div`
 `;
 
 const H1 = styled.h1`
-  margin-left: -30px;
+  margin-left: -15rem;
+
   opacity: 0.3;
   font-size: 200px;
   color: #cfc0dd;
@@ -160,7 +160,7 @@ const SideSection = styled.section`
 
 function about() {
   return (
-    <div>
+    <div className="container">
       <H1>About</H1>
       <Main>
         <article>

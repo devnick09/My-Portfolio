@@ -2,13 +2,17 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const Container1 = styled.div`
-  height: 100vh;
+  height: fit-content;
   width: 1200px;
   margin: auto;
+  padding: 10rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  .container {
+    position: relative;
+  }
   @media screen and (max-width: 480px) {
     width: 340px;
     margin: 0px 30px;
@@ -166,7 +170,8 @@ const Wrap = styled.div`
 const Img = styled.img`
   height: 22rem;
   position: absolute;
-  right: 0;
+  top: 0;
+  right: -15rem;
   @media screen and (max-width: 480px) {
     display: none;
   }
@@ -197,8 +202,8 @@ function Hero() {
             <Btn2>View Projects</Btn2>
           </a>
         </Link>
+        <Img src="/man.png" alt="" />
       </div>
-      <Img src="/man.png" alt="" />
     </Container1>
   );
 }
