@@ -3,6 +3,16 @@ import { v4 as uuidv4 } from "uuid";
 export const AllProjects = [
   {
     id: uuidv4(),
+    name: "Discord UI Clone",
+    description: "Discord UI Clone built with React js and Tailwind CSS.",
+    tags: ["react", "node", "mongo", "express"],
+    live: "https://discord-clone-chat.vercel.app/",
+    github: "https://github.com/devnick09/Discord-UI-Clone",
+    image: "/assets/Discord.png",
+    featured: true,
+  },
+  {
+    id: uuidv4(),
     name: "Javascript Quiz Game",
     description: "Javascript Quiz Game built with vanilla Javascript.",
     tags: ["react", "scss"],
@@ -30,16 +40,6 @@ export const AllProjects = [
     live: "https://nextjs-dashboard-ui.vercel.app/",
     github: "https://github.com/devnick09/Nextjs-Dashboard-UI",
     image: "/assets/Dashboard.png",
-    featured: true,
-  },
-  {
-    id: uuidv4(),
-    name: "Discord UI Clone",
-    description: "Discord UI Clone built with React js and Tailwind CSS.",
-    tags: ["react", "node", "mongo", "express"],
-    live: "https://discord-clone-chat.vercel.app/",
-    github: "https://github.com/devnick09/Discord-UI-Clone",
-    image: "/assets/Discord.png",
     featured: true,
   },
 ];

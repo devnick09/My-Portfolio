@@ -9,17 +9,18 @@ const Main = styled.div`
   margin: 5px;
   border-radius: 30px;
   height: 20rem;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 
   :hover {
     transition: all 0.5s ease-out;
-    background-color: black;
+    background-color: #000000;
+
     border-radius: 30px;
     p,
     a {
       z-index: 1;
       opacity: 1;
-      transition: all 0.8s ease-out;
+      transition: all 0.2s ease-out;
     }
     H3 {
       font-size: 1.5rem;
@@ -30,7 +31,9 @@ const Main = styled.div`
     img {
       pointer-events: none;
       opacity: 0.4;
-      transition: all 0.5s ease-out;
+      filter: blur(25px);
+      -webkit-filter: blur(25px);
+      transition: all 0.2s ease-out;
     }
   }
   @media screen and (max-width: 480px) {
@@ -97,7 +100,7 @@ const Main = styled.div`
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #1c163c;
+    background: #604da6;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -114,7 +117,7 @@ const Main = styled.div`
 
   .cta:hover:before {
     width: 100%;
-    background: #1c163c;
+    background: #604da6;
   }
 
   .cta:active {
