@@ -14,8 +14,8 @@ const NavBar = styled.nav`
   top: 0;
   left: 0;
   z-index: 10;
-  @media screen and (max-width: 400px) {
-    width: 360px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
     display: flex;
   }
 `;
@@ -31,8 +31,9 @@ const MainNav = styled.div`
   }
   @media screen and (max-width: 480px) {
     /* background-color: black; */
-    width: 340px;
+    width: 100%;
     margin: auto;
+    padding: 1.5rem 0.5rem;
     .white {
       display: block;
       color: #cfc0dd;
@@ -116,7 +117,7 @@ const Ul = styled.ul`
 
 const NavDiv = styled.div`
   @media screen and (max-width: 480px) {
-    width: 360px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
