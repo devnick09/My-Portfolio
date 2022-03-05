@@ -13,7 +13,7 @@ const Main = styled.div`
 
   :hover {
     transition: all 0.5s ease-out;
-    background-color: #000000;
+    background-color: #604da69b;
 
     border-radius: 30px;
     p,
@@ -31,8 +31,8 @@ const Main = styled.div`
     img {
       pointer-events: none;
       opacity: 0.4;
-      filter: blur(25px);
-      -webkit-filter: blur(25px);
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
       transition: all 0.2s ease-out;
     }
   }
@@ -104,7 +104,7 @@ const Main = styled.div`
     left: 0;
     display: block;
     border-radius: 50px;
-    background: #604da6;
+    background: #1c163c;
     width: 45px;
     height: 45px;
     transition: all 0.3s ease;
@@ -121,7 +121,7 @@ const Main = styled.div`
 
   .cta:hover:before {
     width: 100%;
-    background: #604da6;
+    background: #1c163c;
   }
 
   .cta:active {
@@ -145,7 +145,7 @@ const P = styled.p`
   letter-spacing: 0.5px;
   margin-top: 0.5rem;
   padding-bottom: 2rem;
-  border-bottom: 3px solid #cbd5e0;
+  border-bottom: 3px solid #cfc0dd;
   transition: all 0.5s ease-in;
 `;
 const Div = styled.div`
