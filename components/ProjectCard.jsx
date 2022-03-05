@@ -8,7 +8,7 @@ const Main = styled.div`
   padding: 40px;
   margin: 5px;
   border-radius: 30px;
-  height: 20rem;
+  height: 18rem;
   transition: all 0.2s ease-in;
 
   :hover {
@@ -40,12 +40,16 @@ const Main = styled.div`
     width: 350px;
     display: flex;
     border-radius: 50px;
-    height: fit-content;
+    height: 14rem;
+    padding: 1.2rem 1.5rem;
     H3 {
       font-size: 1.5rem;
     }
     Div {
       margin-top: 1.5rem;
+    }
+    P {
+      padding-bottom: 1rem;
     }
   }
   img {

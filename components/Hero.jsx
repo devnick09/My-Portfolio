@@ -64,6 +64,9 @@ const P = styled.p`
   position: relative;
   margin-bottom: 30px;
   @media screen and (max-width: 480px) {
+    br {
+      display: none;
+    }
     font-size: 15px;
     width: 320px;
     overflow-wrap: normal;

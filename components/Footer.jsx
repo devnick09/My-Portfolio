@@ -140,8 +140,8 @@ function Footer() {
           <h2>Nikhil Sharma</h2>
           <p className="p1">vishwa.nikhil009@gmail.com</p>
           <p className="p2">
-            Designed & Build by Nikhil Sharma with next js (react js). Fonts
-            (poppins, comfortaa, La Belle Aurore)
+            Designed & Build by Nikhil Sharma with next js (react js). <br />{" "}
+            Fonts (poppins, comfortaa, La Belle Aurore)
           </p>
         </Info>
         <Line1></Line1>
