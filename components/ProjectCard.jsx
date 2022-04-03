@@ -9,10 +9,10 @@ const Main = styled.div`
   margin: 5px;
   border-radius: 30px;
   height: 18rem;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease-in;
 
   :hover {
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     background-color: #604da69b;
 
     border-radius: 30px;
@@ -20,7 +20,7 @@ const Main = styled.div`
     a {
       z-index: 1;
       opacity: 1;
-      transition: all 0.2s ease-out;
+      transition: all 0.3s ease-out;
     }
     H3 {
       font-size: 1.5rem;
@@ -33,7 +33,7 @@ const Main = styled.div`
       opacity: 0.4;
       filter: blur(10px);
       -webkit-filter: blur(10px);
-      transition: all 0.2s ease-out;
+      transition: all 0.3s ease-out;
     }
   }
   @media screen and (max-width: 480px) {
@@ -60,7 +60,7 @@ const Main = styled.div`
     top: 0;
     left: 0;
     border-radius: 30px;
-    transition: all 0.5s ease-in;
+    transition: all 0.4s ease-in;
   }
   .cta {
     opacity: 0;
@@ -146,7 +146,7 @@ const P = styled.p`
   margin-top: 0.5rem;
   padding-bottom: 2rem;
   border-bottom: 3px solid #cfc0dd;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 `;
 const Div = styled.div`
   margin-top: 3rem;
